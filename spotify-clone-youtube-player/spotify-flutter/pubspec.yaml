@@ -1,0 +1,41 @@
+name: spotify_clone
+description: A Spotify-style music player that streams songs from YouTube.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  provider: ^6.1.2
+
+  # YouTube search + audio stream resolution (no API key required)
+  youtube_explode_dart: 3.0.0
+
+  # Audio playback
+  just_audio: ^0.9.40
+
+  # Media keys / audio session metadata
+  audio_service: ^0.18.15
+
+  # Local persistence for liked songs & playlists
+  shared_preferences: ^2.3.2
+
+  # HTTP + caching
+  cached_network_image: ^3.3.1
+  http: ^1.2.2
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
